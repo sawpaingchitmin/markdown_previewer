@@ -8,7 +8,7 @@ const defaultMarkdown = `
 ## Sub-heading
 
 Live Page 👇
-🔗 [Markdown Previewer](https://sawpaingchitmin.github.io/random_quote_machine/)
+🔗 [Markdown Previewer](https://sawpaingchitmin.github.io/markdown_previewer/)
 
 \`Inline code\`
 
