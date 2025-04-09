@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>markdown-previewer</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
     <body>
         <header>
@@ -12,21 +14,31 @@
         </header>
 
         <main>
-            <div id="editor">
-
-            </div>
-            <div id="preview">
+            <div id="app">
 
             </div>
 
+             <!-- React & ReactDOM -->
             <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
             <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
              <!-- Marked.js for Markdown parsing -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js" integrity="sha512-rPuOZPx/WHMHNx2RoALKwiCDiDrCo4ekUctyTYKzBo8NGA79NcTW2gfrbcCL2RYL7RdjX2v9zR0fKyI4U4kPew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <!-- Babel (JSX compiler) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.6/babel.min.js"></script>
+            <script type="text/babel" src="js/script.js"></script>
+
+            <!-- FCC tests -->
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         </main>
 
         <footer>
-
+             <!-- Footer section with GitHub link and copyright information -->
+             <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/sawpaingchitmin/markdown_previewer" target="_blank" rel="noopener noreferrer">
+                Saw Paing Chit Min</a>
+            </p>
+            <p>&copy; 2025 Markdown Previewer by Saw Paing Chit Min</p>
         </footer>
     </body>
 </html>

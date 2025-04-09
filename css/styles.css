@@ -1,0 +1,61 @@
+:root {
+    --background: #94d1f3;
+    --hover-blue: #1c6abd;
+    --white: #f9f9f9;
+    --gray: #666666;
+    --black: #121212;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background);
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#editor {
+    width: 45%;
+    height: 450px;
+    padding: 10px;
+    border-radius: 2%;
+    resize: none;
+}
+
+#preview {
+    width: 45%;
+    height: 450px;
+    overflow: auto;
+    background: var(--white);
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 2%;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    color: var(--black);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}   
+
+footer a:hover {
+    color: var(--hover-blue);   /* Change link color on hover */
+}
