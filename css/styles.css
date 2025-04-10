@@ -6,6 +6,12 @@
     --black: #121212;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     background-color: var(--background);
@@ -15,7 +21,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -26,25 +32,47 @@ h1 {
     align-items: stretch;
 }
 
-#editor {
+.box {
     width: 45%;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    width: 90%;
+    background-color: #ccc;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid var(--gray);
+    border-bottom: none;
+}
+  
+#editor {
+    width: 90%;
+    height: 70vh;
     padding: 10px;
-    border-radius: 2%;
+    /* border-radius: 8px; */
     resize: none;
 }
 
 #preview {
-    width: 45%;
-    height: 450px;
+    width: 90%;
+    height: 70vh;
     overflow: auto;
     background: var(--white);
     padding: 10px;
     border: 1px solid var(--gray);
-    border-radius: 2%;
+    /* border-radius: 8px; */
 }
 
+#editor, #preview {
+    border-top: none;
+}
+  
 footer {
+    margin-top: 30px;
     font-size: 15px;
     text-align: center;
     color: var(--black);
@@ -59,3 +87,4 @@ footer a {
 footer a:hover {
     color: var(--hover-blue);   /* Change link color on hover */
 }
+
