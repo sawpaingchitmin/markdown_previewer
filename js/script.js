@@ -39,8 +39,14 @@ function MarkdownPreviewer() {
 
     return (
         <div className="container">
-            <textarea id="editor" value={markdown} onChange={handleChange} />
-            <div id="preview" dangerouslySetInnerHTML={{ __html: marked.parse(markdown) }} />
+            <div className="box">
+            <div className="title-bar">Editor</div>
+            <textarea id="editor" value={markdown} onChange={handleChange} /> </div>
+
+            <div className="box">
+            <div className="title-bar">Previewer</div>
+
+            <div id="preview" dangerouslySetInnerHTML={{ __html: marked.parse(markdown) }} /> </div>
         </div>
     );
 }
