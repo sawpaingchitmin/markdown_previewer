@@ -1,15 +1,17 @@
+/* Make box sizing easier to handle */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Define color variables */
 :root {
     --background: #94d1f3;
     --hover-blue: #1c6abd;
     --white: #f9f9f9;
     --gray: #666666;
     --black: #121212;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 body {
@@ -19,11 +21,12 @@ body {
     margin: 0;
 }
 
-h1 {
+h1#title {
     text-align: center;
     margin-bottom: 30px;
 }
 
+/* Layout: two boxes side by side */
 .container {
     display: flex;
     gap: 20px;
@@ -32,15 +35,17 @@ h1 {
     align-items: stretch;
 }
 
+/* Style for editor and preview sections */
 .box {
     width: 45%;
     display: flex;
     flex-direction: column;
 }
 
+/* Top bar of each box */
 .title-bar {
     width: 90%;
-    background-color: #ccc;
+    background-color: rgb(162, 223, 217);
     padding: 8px 12px;
     font-weight: bold;
     border-top-left-radius: 8px;
@@ -48,25 +53,28 @@ h1 {
     border: 1px solid var(--gray);
     border-bottom: none;
 }
-  
+
+/* Text area for markdown input */
 #editor {
     width: 90%;
     height: 70vh;
     padding: 10px;
-    /* border-radius: 8px; */
     resize: none;
+    outline: none;
 }
 
+/* Div to show parsed markdown */
 #preview {
     width: 90%;
     height: 70vh;
     overflow: auto;
     background: var(--white);
+    font-size: 0.8rem;
     padding: 10px;
     border: 1px solid var(--gray);
-    /* border-radius: 8px; */
 }
 
+/* Remove top border to join with title-bar */
 #editor, #preview {
     border-top: none;
 }
@@ -78,12 +86,14 @@ footer {
     color: var(--black);
 }
 
+/* Style footer link */
 footer a {
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
 }   
 
+/* Change link color on hover */
 footer a:hover {
     color: var(--hover-blue);   /* Change link color on hover */
 }

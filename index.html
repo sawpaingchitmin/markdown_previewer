@@ -4,32 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>markdown-previewer</title>
+        <!-- Link to external CSS file for styles -->
         <link rel="stylesheet" href="css/styles.css">
         <!-- Font Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
     <body>
         <header>
-            <h1>Markdown Previewer</h1>
+             <!-- Title of the project -->
+            <h1 id="title">Markdown Previewer</h1>
         </header>
 
         <main>
             <div id="app">
-
+                <!-- React app will be rendered here -->
             </div>
 
-             <!-- React & ReactDOM -->
+            <!-- React and ReactDOM for rendering the app -->
             <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
             <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
-             <!-- Marked.js for Markdown parsing -->
+            <!-- Marked.js for parsing Markdown text -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js" integrity="sha512-rPuOZPx/WHMHNx2RoALKwiCDiDrCo4ekUctyTYKzBo8NGA79NcTW2gfrbcCL2RYL7RdjX2v9zR0fKyI4U4kPew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-            <!-- Babel (JSX compiler) -->
+            <!-- Babel for compiling JSX code to JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.6/babel.min.js"></script>
             <script type="text/babel" src="js/script.js"></script>
 
-            <!-- FCC tests -->
+            <!-- FreeCodeCamp testing script -->
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         </main>
 
